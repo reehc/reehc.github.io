@@ -8,7 +8,8 @@ I thought I was going to learn everything, but it's not true. I'am older now but
 
 ## Old fashion plan
 - Truth and Kindness
-- Computer Graphics   -> An introductory course
+- Computer Graphics
+  + [Introduction to Computer Graphics](https://cs.brown.edu/courses/cs123/)
 - Computer Languages
   - [Python Summary](http://www.cs.ucc.ie/~hoare/python_summary.pdf)
 - Computer Security
