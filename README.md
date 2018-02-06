@@ -16,5 +16,7 @@ I thought I was going to learn everything, but it's not true. I'am older now but
 - That's all.
 
 > You really don't need to do your best every time.
+
 > You must try to know clearly who you are everytime. 
+
 > Enough for a year, hard die !
