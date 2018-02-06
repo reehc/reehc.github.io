@@ -7,6 +7,7 @@ I thought I was going to learn everything, but it's not true. I'am older now but
 - Of course I mean books, words and minds.
 
 ## Old fashion plan
+- Truth and Kindness
 - Computer Graphics
 - Computer Languages
 - Computer Security
