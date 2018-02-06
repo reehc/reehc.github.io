@@ -9,8 +9,11 @@ I thought I was going to learn everything, but it's not true. I'am older now but
 ## Old fashion plan
 - Truth and Kindness
 - Computer Graphics   -> An introductory course
-- Computer Languages  -> [Python Summary](http://www.cs.ucc.ie/~hoare/python_summary.pdf)
-- Computer Security   -> Networks & Cryptography
+- Computer Languages
+  - [Python Summary](http://www.cs.ucc.ie/~hoare/python_summary.pdf)
+- Computer Security
+  - Networks & Cryptography
+  - [Computer Science Student Resources](http://www.computersciencestudent.com/)
 - Amazing Math        -> Fundamental courses
 - Amazing Physics     -> Also...
 - That's all.
