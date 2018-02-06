@@ -11,5 +11,7 @@ I thought I was going to learn everything, but it's not true. I'am older now but
 - Computer Languages
 - Computer Security
 - Amazing Math
-- Amazing Pysics
+- Amazing Physics
 - That's all.
+
+> Simple, right? But hard working on.
