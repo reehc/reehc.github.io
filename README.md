@@ -15,4 +15,4 @@ I thought I was going to learn everything, but it's not true. I'am older now but
 - Amazing Physics
 - That's all.
 
-> Simple, right? But hard working on.
+> Enough for a year, hard die !
