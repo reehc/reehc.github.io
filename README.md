@@ -8,11 +8,11 @@ I thought I was going to learn everything, but it's not true. I'am older now but
 
 ## Old fashion plan
 - Truth and Kindness
-- Computer Graphics
-- Computer Languages
-- Computer Security
-- Amazing Math
-- Amazing Physics
+- Computer Graphics   -> An introductory course
+- Computer Languages  -> Python
+- Computer Security   -> Networks & Cryptography
+- Amazing Math        -> Fundamental courses
+- Amazing Physics     -> Also...
 - That's all.
 
 > You really don't need to do your best every time.
