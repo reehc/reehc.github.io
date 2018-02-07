@@ -16,14 +16,20 @@ I thought I was going to learn everything, but it's not true. I'm older now but 
   - [Introduction to Computer Graphics - Brown University](https://cs.brown.edu/courses/cs123/)
   - [15-462 Computer Graphics](15462.courses.cs.cmu.edu/)
 - Computer Languages
+
+  - [Awesome Modern C++](http://awesomecpp.com/)
   - [Python Summary](http://www.cs.ucc.ie/~hoare/python_summary.pdf)
 - Computer Security
-  - Networks & Cryptography
+
   - [15-441 Computer Networks](https://www.cs.cmu.edu/~prs/15-441-F17/)
   - [*The Art of Exploitation* [PDF]](https://leaksource.files.wordpress.com/2014/08/hacking-the-art-of-exploitation.pdf)
   - [Computer Science Student Resources](http://www.computersciencestudent.com/)
-- Amazing Math        -> Fundamental courses
-- Amazing Physics     -> Also...
+- Amazing Math
+
+  - At least finish Algebra & Analysis
+- Amazing Physics
+
+  - Can I.. 
 - That's all.
 
 > You really don't need to do your best every time.
