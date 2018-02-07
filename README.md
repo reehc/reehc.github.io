@@ -14,7 +14,7 @@ I thought I was going to learn everything, but it's not true. I'm older now but 
 - Computer Graphics
 
   - [Introduction to Computer Graphics - Brown University](https://cs.brown.edu/courses/cs123/)
-  - [Conputer Graphics - CMU](15462.courses.cs.cmu.edu/)
+  - [Computer Graphics - CMU](15462.courses.cs.cmu.edu/)
 - Computer Languages
   - [Python Summary](http://www.cs.ucc.ie/~hoare/python_summary.pdf)
 - Computer Security
