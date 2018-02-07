@@ -29,6 +29,7 @@ I thought I was going to learn everything, but it's not true. I'm older now but 
 - Computer Security
 
   - [15-441 Computer Networks](https://www.cs.cmu.edu/~prs/15-441-F17/)
+  - [15-441 Helpful Materials](https://www.cs.cmu.edu/~prs/15-441-F16/lectures/)
   - [*The Art of Exploitation* [PDF]](https://leaksource.files.wordpress.com/2014/08/hacking-the-art-of-exploitation.pdf)
   - [Computer Science Student Resources](http://www.computersciencestudent.com/)
 
