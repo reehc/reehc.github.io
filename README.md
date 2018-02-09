@@ -24,6 +24,7 @@ I thought I was going to learn everything, but it's not true. I'm older now but 
 - Computer Languages
 
   - [Awesome Modern C++](http://awesomecpp.com/)
+  - [Python & Numpy tutorial from cs231n](https://cs231n.github.io/python-numpy-tutorial/)
   - [Python Summary](http://www.cs.ucc.ie/~hoare/python_summary.pdf)
 
 - Computer Security
