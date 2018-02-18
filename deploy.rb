@@ -21,19 +21,24 @@ end
 
 function convert(markdown)
   meta = []
-  if (markdown.getline()[0] == "#")
-    while(markdown.getline()[0] != "#")
-      meta.append()
+  line = markdown.getline()
+  if (line != null and line[0] == "#")
+    loops do
+      line = markdown.getline()
+      if line[0] == "#" then line = markdown.getline break end
+      meta.append(line)
     end
   end
-  while(markdown.getline())
+  while(line != NULL)
     tempfile.write()
+    line = markdown.getline()
   end
   generate(tempfile, meta)
 end
 
 function generate(tempfile, meta)
   // convert to html
+  // add link to index.html
 end
 
 scan(markdown)
