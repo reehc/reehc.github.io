@@ -4,7 +4,7 @@ I thought I was going to learn everything, but it's not true. I'm older now but 
 
 ## A new Trap?
 *Smarter me, small achievement !*
-1. **Github Website** (pandoc)
+1. **Github Website** (pandoc). I should write a script which can generate static sites for me, then things will be easier.
 
 ## Way out
 
