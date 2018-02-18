@@ -39,6 +39,7 @@ end
 function generate(tempfile, meta)
   // convert to html
   // add link to index.html
+  // maybe pandoc !
 end
 
 scan(markdown)
