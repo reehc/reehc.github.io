@@ -12,7 +12,7 @@ tmp = "tmp/"
 index = "index.html"
 
 def scan(directory)
-  Dir.entries(directory).reject {|entry| entry == '.' or entry == '..'}.each do |item|
+  Dir.entries(directory).reject {|entry| entry[0] == '.'}.each do |item|
     item_path = File.join directory, item
     if File.directory? item_path
       scan item_path
@@ -22,28 +22,40 @@ def scan(directory)
   end
 end
 
-def convert(markdown)
-  meta = []
-  line = markdown.getline()
-  if (line != null and line[0] == "#")
-    loops do
-      line = markdown.getline()
-      if line[0] == "#" then line = markdown.getline break end
+def convert(markdown_filename)
+  meta = Hash.new
+  markdown = File.open(markdown_filename, "r")
+  tempfile = File.open(File.join tmp, markdown_file, "w")
+  if f.eof? then p "Empty Markdown file", markdown_filename; return end
+  line = markdown.readline
+  if (line.strip == "cheer")
+    loop do
+      if f.eof? then p "Invalid Format", markdown_filename; return end
+      line = markdown.readline
+      if line.strip == "cheer"
+        if f.eof?
+          line = ''
+          break
+        else 
+          line = markdown.readline
+          break
+        end
+      end
       meta.append(line)
     end
-  end
-  while(line != NULL)
-    tempfile.write()
+  loop do
+    tempfile.writeline(line)
+    if f.eof?
+      markdown.close
+      tempfile.close
+      generate(File.join tmp, markdown_file, meta)
+    end
     line = markdown.getline()
   end
-  generate(tempfile, meta)
 end
 
 def generate(tempfile, meta)
-  // convert to html
-  // add link to index.html
-  // maybe pandoc !
+  p "Generating... " ,tempfile, meta
 end
 
 scan(markdown)
-`rm -rf tmp`
