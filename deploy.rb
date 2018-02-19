@@ -7,7 +7,7 @@ Deploy my Markdowns in ruby.
 =end
 
 $markdown = "markdown/"
-$destination = "markdown_sites/"
+$dst_dir = "markdown_sites/"
 $tempMD = "tmp/temp.md"
 $index = "tmp/temp.html"
 
@@ -23,14 +23,14 @@ def scan(directory)
 end
 
 def convert(markdown_filename)
-  meta = Array.new
+  meta = Hash.new
   markdown = File.open(markdown_filename, "r")
   tempfile = File.open($tempMD, "w")
   if markdown.eof? then p "Empty Markdown file", markdown_filename; return end
   line = markdown.readline
   if (line.strip == "cheer")
     loop do
-      if markdown.eof? then p "Invalid Format", markdown_filename; return end
+      if markdown.eof? then p "Invalid Format(Loss cheer)", markdown_filename; return end
       line = markdown.readline
       if line.strip == "cheer"
         if markdown.eof?
@@ -41,7 +41,9 @@ def convert(markdown_filename)
           break
         end
       end
-      meta.append(line)
+      info = line.strip.split(':')
+      if info.count != 2 then p "Invalid Format(Multiple :)"; return end
+      meta[info[0].strip] = info[1].strip
     end
   end
   loop do
@@ -57,11 +59,14 @@ def convert(markdown_filename)
 end
 
 def generate(tempfile, meta)
+  if not meta["title"] then p "Invalid Format(Loss title)"; return end
+  dst = File.join dst_dir, meta["title"]
   if not File.exist? dst
-    print "Generating " ,tempfile, meta
+    print "Generating " ,dst, meta
     `pandoc #{tempfile} -o #{dst} -c Github.css`
     i = File.open(index, "a")
     i.write("(#{title})[#{dst}]\n")
+    i.close
   end
 end
 
