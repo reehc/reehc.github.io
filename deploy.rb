@@ -61,7 +61,7 @@ def generate(tempfile, meta)
     print "Generating " ,tempfile, meta
     `pandoc #{tempfile} -o #{dst} -c Github.css`
     i = File.open(index, "a")
-    i.write('(#{title})[#{dst}]\n')
+    i.write("(#{title})[#{dst}]\n")
   end
 end
 
