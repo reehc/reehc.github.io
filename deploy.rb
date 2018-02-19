@@ -15,6 +15,8 @@ $index = "tmp/index.md"
 if not File.exist? $markdown then `mkdir "#{$markdown}"` end
 if not File.exist? $dst_dir then `mkdir "#{$dst_dir}"` end
 if not File.exist? $temp_dir then `mkdir "#{$temp_dir}"` end
+File.open($index, "w").close
+File.open($tempMD, "w").close
 
 def scan(directory)
   Dir.entries(directory).reject {|entry| entry[0] == '.'}.each do |item|
