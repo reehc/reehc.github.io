@@ -8,8 +8,13 @@ Deploy my Markdowns in ruby.
 
 $markdown = "markdown/"
 $dst_dir = "markdown_sites/"
+$temp_dir = "tmp/"
 $tempMD = "tmp/temp.md"
-$index = "tmp/temp.html"
+$index = "tmp/index.md"
+
+if not File.exist? $markdown then `mkdir "#{$markdown}"` end
+if not File.exist? $dst_dir then `mkdir "#{$dst_dir}"` end
+if not File.exist? $temp_dir then `mkdir "#{$temp_dir}"` end
 
 def scan(directory)
   Dir.entries(directory).reject {|entry| entry[0] == '.'}.each do |item|
@@ -60,15 +65,16 @@ end
 
 def generate(tempfile, meta)
   if not meta["title"] then p "Invalid Format(Loss title)"; return end
-  dst = File.join dst_dir, meta["title"]
+  dst = File.join $dst_dir, meta["title"] + ".html"
   if not File.exist? dst
-    print "Generating " ,dst, meta
-    `pandoc #{tempfile} -o #{dst} -c Github.css`
-    i = File.open(index, "a")
-    i.write("(#{title})[#{dst}]\n")
+    print "Generating " ,dst, "\n"
+	File.open(dst, "w").close
+    `pandoc #{tempfile} -o "#{dst}" -c Github.css`
+    i = File.open($index, "a")
+    i.write("[#{meta["title"]}](#{dst})\n\n")
     i.close
   end
 end
 
-scan(markdown)
-`pandoc #{index} -o index.html -c Github.css`
+scan($markdown)
+`pandoc #{$index} -o index.html -c Github.css`
