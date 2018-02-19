@@ -11,15 +11,18 @@ destination = "markdown_sites/"
 tmp = "tmp/"
 index = "index.html"
 
-function scan(directory)
-  for item in directory
-    if item is a directory then scan directory + item end
-    else if item is a .md file then convert(item) end
-    else do nothing
+def scan(directory)
+  Dir.entries(directory).reject {|entry| entry == '.' or entry == '..'}.each do |item|
+    item_path = File.join directory, item
+    if File.directory? item_path
+      scan item_path
+    elsif File.extname(item_path) == '.md'
+      convert(item_path)
+    end
   end
 end
 
-function convert(markdown)
+def convert(markdown)
   meta = []
   line = markdown.getline()
   if (line != null and line[0] == "#")
@@ -36,7 +39,7 @@ function convert(markdown)
   generate(tempfile, meta)
 end
 
-function generate(tempfile, meta)
+def generate(tempfile, meta)
   // convert to html
   // add link to index.html
   // maybe pandoc !
