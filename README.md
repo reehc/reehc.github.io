@@ -9,8 +9,8 @@ I thought I was going to learn everything, but it's not true. I'm older now but 
 
 ## Way out
 
-- read. Emm... I haven't started before Feb 7th.
-- write. I feel that I have to push it later.
+- read. Emm... I haven't started before Feb 7th. And my spring rest was wasted, How ?
+- write. I feel that I have to push it later. And later ?
 - Of course I mean books, words and minds.
 
 ## Old fashion plan
