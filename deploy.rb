@@ -8,7 +8,7 @@ Deploy my Markdowns in ruby.
 
 markdown = "markdown/"
 destination = "markdown_sites/"
-tmp = "tmp/"
+$tmp = "tmp/"
 index = "index.html"
 
 def scan(directory)
@@ -23,17 +23,17 @@ def scan(directory)
 end
 
 def convert(markdown_filename)
-  meta = Hash.new
+  meta = Array.new
   markdown = File.open(markdown_filename, "r")
-  tempfile = File.open(File.join tmp, markdown_file, "w")
-  if f.eof? then p "Empty Markdown file", markdown_filename; return end
+  tempfile = File.open(File.join($tmp,"temp"), "w")
+  if markdown.eof? then p "Empty Markdown file", markdown_filename; return end
   line = markdown.readline
   if (line.strip == "cheer")
     loop do
-      if f.eof? then p "Invalid Format", markdown_filename; return end
+      if markdown.eof? then p "Invalid Format", markdown_filename; return end
       line = markdown.readline
       if line.strip == "cheer"
-        if f.eof?
+        if markdown.eof?
           line = ''
           break
         else 
@@ -43,19 +43,21 @@ def convert(markdown_filename)
       end
       meta.append(line)
     end
+  end
   loop do
-    tempfile.writeline(line)
-    if f.eof?
+    tempfile.write(line)
+    if markdown.eof?
       markdown.close
       tempfile.close
-      generate(File.join tmp, markdown_file, meta)
+      generate(File.join($tmp,"temp"), meta)
+	  return
     end
-    line = markdown.getline()
+    line = markdown.readline()
   end
 end
 
 def generate(tempfile, meta)
-  p "Generating... " ,tempfile, meta
+  print "Generating " ,tempfile, meta
 end
 
 scan(markdown)
