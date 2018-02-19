@@ -6,10 +6,10 @@ Deploy my Markdowns in ruby.
 2. that's all
 =end
 
-markdown = "markdown/"
-destination = "markdown_sites/"
-$tmp = "tmp/"
-index = "index.html"
+$markdown = "markdown/"
+$destination = "markdown_sites/"
+$tempMD = "tmp/temp.md"
+$index = "index.html"
 
 def scan(directory)
   Dir.entries(directory).reject {|entry| entry[0] == '.'}.each do |item|
@@ -25,7 +25,7 @@ end
 def convert(markdown_filename)
   meta = Array.new
   markdown = File.open(markdown_filename, "r")
-  tempfile = File.open(File.join($tmp,"temp"), "w")
+  tempfile = File.open($tempMD, "w")
   if markdown.eof? then p "Empty Markdown file", markdown_filename; return end
   line = markdown.readline
   if (line.strip == "cheer")
@@ -49,7 +49,7 @@ def convert(markdown_filename)
     if markdown.eof?
       markdown.close
       tempfile.close
-      generate(File.join($tmp,"temp"), meta)
+      generate($tempMD, meta)
 	  return
     end
     line = markdown.readline()
