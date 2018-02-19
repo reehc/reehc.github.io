@@ -9,7 +9,7 @@ Deploy my Markdowns in ruby.
 $markdown = "markdown/"
 $destination = "markdown_sites/"
 $tempMD = "tmp/temp.md"
-$index = "index.html"
+$index = "tmp/temp.html"
 
 def scan(directory)
   Dir.entries(directory).reject {|entry| entry[0] == '.'}.each do |item|
@@ -50,14 +50,20 @@ def convert(markdown_filename)
       markdown.close
       tempfile.close
       generate($tempMD, meta)
-	  return
+      return
     end
     line = markdown.readline()
   end
 end
 
 def generate(tempfile, meta)
-  print "Generating " ,tempfile, meta
+  if not File.exist? dst
+    print "Generating " ,tempfile, meta
+    `pandoc #{tempfile} -o #{dst} -c Github.css`
+    i = File.open(index, "a")
+    i.write('(#{title})[#{dst}]\n')
+  end
 end
 
 scan(markdown)
+`pandoc #{index} -o index.html -c Github.css`
