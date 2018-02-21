@@ -71,7 +71,7 @@ def generate(tempfile, meta)
   if not File.exist? dst
     print "Generating " ,dst, "\n"
 	File.open(dst, "w").close
-    `pandoc #{tempfile} -o "#{dst}" -c Github.css`
+    `pandoc -s #{tempfile} -o "#{dst}" -c Github.css`
     i = File.open($index, "a")
     i.write("[#{meta["title"]}](#{dst})\n\n")
     i.close
@@ -79,4 +79,5 @@ def generate(tempfile, meta)
 end
 
 scan($markdown)
-`pandoc #{$index} -o index.html -c Github.css`
+`pandoc -s #{$index} -o index.html -c Github.css`
+`rm -rf tmp`
