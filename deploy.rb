@@ -33,11 +33,11 @@ def convert(markdown_filename)
   meta = Hash.new
   markdown = File.open(markdown_filename, "r")
   tempfile = File.open($tempMD, "w")
-  if markdown.eof? then p "Empty Markdown file", markdown_filename; return end
+  if markdown.eof? then print "Empty Markdown file ", markdown_filename, "\n"; return end
   line = markdown.readline
   if (line.strip == "cheer")
     loop do
-      if markdown.eof? then p "Invalid Format(Loss cheer)", markdown_filename; return end
+      if markdown.eof? then print "Invalid Format(Loss cheer) ", markdown_filename, "\n"; return end
       line = markdown.readline
       if line.strip == "cheer"
         if markdown.eof?
@@ -49,7 +49,7 @@ def convert(markdown_filename)
         end
       end
       info = line.strip.split(':')
-      if info.count != 2 then p "Invalid Format(Multiple :)"; return end
+      if info.count != 2 then print "Invalid Format(Multiple :) ", "\n"; return end
       meta[info[0].strip] = info[1].strip
     end
   end
