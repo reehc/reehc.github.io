@@ -68,7 +68,7 @@ end
 def generate(tempfile, meta)
   if not meta["title"] then p "Invalid Format(Loss title)"; return end
   dst = File.join $dst_dir, meta["title"] + ".html"
-  if not File.exist? dst
+  if true or not File.exist? dst
     print "Generating " ,dst, "\n"
 	File.open(dst, "w").close
     `pandoc -s #{tempfile} -o "#{dst}" -c Github.css`
