@@ -6,6 +6,7 @@ I thought I was going to learn everything, but it's not true. I'm older now but 
 *Smarter me, small achievement !*
 1. **Github Website** . I should write a script which can generate static sites for me, then things will be easier. All I need to do is writing my markdown with meta-infomation and processes after this is automatic.
     - Done. See my *deploy.rb*~
+2. **Play With CSS(Cascading Style Sheets)**. Try with pandoc, make this site clean.
 
 ## Way out
 
