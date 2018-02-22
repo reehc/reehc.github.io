@@ -1,0 +1,15 @@
+h1 {
+	border: 5px solid red;
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	background: gray;
+}
+
+h2, h3, h4, h5 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
