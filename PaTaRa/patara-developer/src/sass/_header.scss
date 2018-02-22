@@ -1,0 +1,66 @@
+/*--------------------------------------------------
+Header
+---------------------------------------------------*/
+
+.header {
+      margin: 5rem 0;
+      text-align: center; 
+
+      .logo {
+            width: 280px;
+            margin: 0 auto;
+            position: relative;
+
+            h1 {
+                  letter-spacing: 2.2rem;
+                  text-align: center;
+                  font-size: 4.0rem;
+                  font-family: 'Aqua Grotesque','sans-serif';
+            }
+
+            a {
+                  text-decoration: none;
+                  color: #222;
+                  -webkit-transition: .5s all;
+                  -o-transition: .5s all;
+                  -moz-transition: .5s all;
+                  transition: .5s all;
+
+                  &:hover {
+                        color: $primary-color;
+                        -webkit-transition: .5s all;
+                        -o-transition: .5s all;
+                        -moz-transition: .5s all;
+                        transition: .5s all;
+
+                        h1{
+                              &:after {
+                                    border-bottom: 4px solid; 
+                                    border-bottom-color:$primary-color; 
+                                   -webkit-transition: .5s all;
+                                    -o-transition: .5s all;
+                                    -moz-transition: .5s all;
+                                    transition: .5s all;
+                              }
+                        }
+                  }
+            }
+
+            h6 {
+
+                  letter-spacing: 1.19rem;
+                  text-transform: uppercase;
+                  text-align: center;
+                  position: absolute;
+                  bottom: -40px;
+
+            }
+      }
+}
+
+
+
+
+
+
+

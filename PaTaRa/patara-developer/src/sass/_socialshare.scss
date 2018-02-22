@@ -1,0 +1,81 @@
+/*--------------------------------------------------
+Social Share
+---------------------------------------------------*/
+
+.socbtn{
+          position: relative;
+          display: block;
+          cursor: pointer;
+          margin: 20px auto 0 auto;
+          width: 60px;
+
+          .share {
+            font-size: 24px;
+            font-weight: 700;
+            font-family: $font-heading;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding:10px;
+            -webkit-transition: 1s all;
+            -o-transition: 1s all;
+            -moz-transition: 1s all;
+            transition: 1s all;
+
+
+            &:hover{
+             color: $link-color;
+              -webkit-transition: 1s all;
+              -o-transition: 1s all;
+              -moz-transition: 1s all;
+              transition: 1s all;
+            }
+          }
+
+          &:hover .popup{
+            top: -100%;
+            visibility: visible;
+            opacity: 1;
+            -webkit-transition: 1s all;
+            -o-transition: 1s all;
+            -moz-transition: 1s all;
+            transition: 1s all;
+          }
+
+          .popup{
+            position: absolute;
+            top: -10%;
+            left: -10px;
+            visibility: hidden ;
+            width: 60px;
+            height: 0px;
+            line-height: 50px;
+            opacity: 0;
+            -webkit-transition: 1s all;
+            -o-transition: 1s all;
+            -moz-transition: 1s all;
+            transition: 1s all;
+
+            a {
+              display: inline-block;
+              margin-top: 0px;
+              width: 30px;
+              height: 30px;
+
+              text-align: center;
+              text-decoration: none;
+              font-size: 36px;
+              line-height: 30px;
+              -webkit-background-clip: text;
+              background-clip: text;
+
+              &:hover{
+
+                -webkit-transition: 1s all;
+                -o-transition: 1s all;
+                -moz-transition: 1s all;
+                transition: 1s all;
+              }
+            }
+
+          }
+        }

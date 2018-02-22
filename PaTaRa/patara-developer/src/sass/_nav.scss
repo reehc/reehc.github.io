@@ -1,0 +1,51 @@
+/*--------------------------------------------------
+Navbar
+---------------------------------------------------*/
+
+
+.nav { 
+	width: 100%;
+	border-top: 1px solid #eee;
+
+	ul { 
+		list-style: none; 
+		padding: 0px; 
+		margin: 0px; 
+		text-align: center; 
+
+		li {
+			display: inline-block;
+			margin-bottom:0;
+			line-height: 6.5rem; 
+
+			a {
+				display: block; 
+				padding: 0px 7px; 
+				text-decoration: none; 
+				text-transform: uppercase;
+				font-size: 13px;
+				font-weight: 700 ;
+				letter-spacing: 0;
+				font-family: $font-heading;
+				color: $font-color;
+
+				-webkit-transition: .5s all;
+				-o-transition: .5s all;
+				-moz-transition: .5s all;
+				transition: .5s all;
+
+				&:hover {
+					color: $link-color;
+
+					-webkit-transition: .5s all;
+					-o-transition: .5s all;
+					-moz-transition: .5s all;
+					transition: .5s all;
+				}
+			}
+		}
+	}
+
+}
+
+

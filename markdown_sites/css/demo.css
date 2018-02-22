@@ -1,3 +1,7 @@
+body {
+	margin: 300 300 300 300;
+}
+
 h1 {
 	border: 5px solid red;
 	width: 500px;
@@ -11,5 +15,9 @@ h2, h3, h4, h5 {
 }
 
 p {
+	display:table-cell;
+    vertical-align: middle;
+	width: 300px;
+	border: 4px dotted blue;
 	text-align: center;
 }
