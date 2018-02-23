@@ -6,6 +6,8 @@ cheer
 
 [paragraphs], [headers]
 
+![image](image/2018.png)
+
 > A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. – John Gruber
 
 ## Paragraphs
