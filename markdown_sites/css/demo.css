@@ -1,23 +1,21 @@
 body {
-	margin: 300 300 300 300;
+	font-size: 20px;
+	font-family: monospace;
+	width: 777px;
+	margin: 0 auto;
 }
 
 h1 {
-	border: 5px solid red;
-	width: 500px;
-	margin: 0 auto;
 	text-align: center;
-	background: gray;
+	padding: 10px;
 }
 
 h2, h3, h4, h5 {
-	text-align: center;
+	border: 3px solid blue;
+	padding: 10px;	
+	margin: 10px;
 }
 
-p {
-	display:table-cell;
-    vertical-align: middle;
-	width: 300px;
-	border: 4px dotted blue;
-	text-align: center;
+blockquote {
+	padding: 22px;
 }
