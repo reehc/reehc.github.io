@@ -73,7 +73,7 @@ def generate(tempfile, meta)
 	File.open(dst, "w").close
     `pandoc --css css/demo.css -s #{tempfile} -o "#{dst}"`
     i = File.open($index, "a")
-    i.write("[#{meta["title"]}](#{dst})\n\n")
+    i.write("# [#{meta["title"]}](#{dst})\n\n")
     i.close
   end
 end
