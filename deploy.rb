@@ -79,5 +79,5 @@ def generate(tempfile, meta)
 end
 
 scan($markdown)
-`pandoc -s #{$index} -o index.html`
+`pandoc --css markdown_sites/css/demo.css -s #{$index} -o index.html`
 `rm -rf tmp`
