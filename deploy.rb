@@ -71,7 +71,7 @@ def generate(tempfile, meta)
   if true or not File.exist? dst
     print "Generating " ,dst, "\n"
 	File.open(dst, "w").close
-    `pandoc --css css/demo.css -s #{tempfile} -o "#{dst}"`
+    `pandoc --css css/demo.css -A markdown_sites/prepare/footer.html -s #{tempfile} -o "#{dst}"`
     i = File.open($index, "a")
     i.write("# [#{meta["title"]}](#{dst})\n\n")
     i.close
