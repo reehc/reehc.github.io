@@ -73,7 +73,7 @@ def generate(tempfile, meta)
 	File.open(dst, "w").close
     `pandoc --css css/demo.css -A markdown_sites/prepare/footer.html -s #{tempfile} -o "#{dst}"`
     i = File.open($index, "a")
-    i.write("# [#{meta["title"]}](#{dst})\n\n")
+    i.write("## [#{meta["title"]}](#{dst})\n\n")
     i.close
   end
 end
@@ -83,7 +83,7 @@ scan($markdown)
 archived = Dir.new "archived_sites"
 i = File.open($index, "a")
 archived.each do |file|
-	if File.extname(file) == ".html" then i.write("# [#{File.basename(file, ".html")}](archived_sites/#{file})\n\n"); print "Generating ", file, "\n" end
+	if File.extname(file) == ".html" then i.write("## [#{File.basename(file, ".html")}](archived_sites/#{file})\n\n"); print "Generating ", file, "\n" end
 end
 i.close
 
