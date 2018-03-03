@@ -24,7 +24,7 @@ I want to write, I want to sing, I want to tell, I want to be seen, I hate such 
 
  
 ## A Music Player ~
-<button type="button" class="play_button" onClick="play()">start</button>
+<button type="button" class="play_button" onClick="play()">play</button>
 <button type="button" class="pause_button" onClick="pause()">pause</button>
 <button type="button" class="replay_button" onClick="replay()">replay</button>
 
