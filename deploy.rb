@@ -80,12 +80,14 @@ end
 
 scan($markdown)
 
+=begin Drop Archives
 archived = Dir.new "archived_sites"
 i = File.open($index, "a")
 archived.each do |file|
 	if File.extname(file) == ".html" then i.write("## [#{File.basename(file, ".html")}](archived_sites/#{file})\n\n"); print "Generating ", file, "\n" end
 end
 i.close
+=end
 
 `pandoc --css markdown_sites/css/demo.css -s #{$index} -o index.html`
 `rm -rf tmp`
