@@ -1,5 +1,6 @@
 cheer
 title: Day 1
+tag: Music
 cheer
 
 # What's the "theory" of music?

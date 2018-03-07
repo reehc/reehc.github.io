@@ -1,5 +1,6 @@
 cheer
 title: Pandoc's Markdown
+op:hide
 cheer
 
 # [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)

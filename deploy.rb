@@ -65,15 +65,18 @@ def convert(markdown_filename)
   end
 end
 
+$tag=7
 def generate(tempfile, meta)
+  if meta["op"] == "hide" then return end
   if not meta["title"] then p "Invalid Format(Loss title)"; return end
   dst = File.join $dst_dir, meta["title"] + ".html"
   if true or not File.exist? dst
-    print "Generating " ,dst, "\n"
+    print "Generating ", meta, "\n"
 	File.open(dst, "w").close
     `pandoc --css css/demo.css -A markdown_sites/prepare/footer.html -t html5 -s #{tempfile} -o "#{dst}"`
     i = File.open($index, "a")
-    i.write("## [#{meta["title"]}](#{dst})\n\n")
+    if meta["tag"] != $tag then $tag = meta["tag"]; if not $tag then $tag = "Untagged" end; i.write("### #{$tag}\n") end
+    i.write("#### [#{meta["title"]}](#{dst})\n\n")
     i.close
   end
 end
