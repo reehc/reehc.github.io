@@ -53,3 +53,9 @@ button {
 .replay_button {
 	color: orange;
 }
+
+iframe {
+    width: 60vw; 
+    height: 33vw; 
+    background:white;  
+}
