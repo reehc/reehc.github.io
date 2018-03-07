@@ -75,7 +75,7 @@ def generate(tempfile, meta)
 	File.open(dst, "w").close
     `pandoc --css css/demo.css -A markdown_sites/prepare/footer.html -t html5 -s #{tempfile} -o "#{dst}"`
     i = File.open($index, "a")
-    if meta["tag"] != $tag then $tag = meta["tag"]; if not $tag then $tag = "Untagged" end; i.write("\n\n\n\n### #{$tag}\n") end
+    if meta["tag"] != $tag then $tag = meta["tag"]; if not $tag then $tag = "Untagged" end; i.write("\\\n\n\n## #{$tag}\n") end
     i.write("#### [#{meta["title"]}](#{dst})\n\n")
     i.close
   end
@@ -92,5 +92,5 @@ end
 i.close
 =end
 
-`pandoc --css markdown_sites/css/demo.css -s #{$index} -o index.html`
+`pandoc --css markdown_sites/css/demo.css -A markdown_sites/prepare/footer.html -s #{$index} -o index.html`
 `rm -rf tmp`
