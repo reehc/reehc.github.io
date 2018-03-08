@@ -40,7 +40,6 @@ cheer
 ### 一些惊险的事
 
 > 我想着用命令改变命令行字体来着，
-于是试了句（当然是热心网友提供的）
-`gsettings set org.gnome.desktop.interface font-name ""`。
-然后桌面就崩了。
+> 于是试了句（当然是热心网友提供的）`gsettings set org.gnome.desktop.interface font-name ""`。
+> 然后桌面就崩了。
 
