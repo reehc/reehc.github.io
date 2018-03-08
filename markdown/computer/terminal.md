@@ -1,5 +1,5 @@
 cheer
-title: 定制自己的Terminal
+title: 定制自己的 Terminal
 tag: Computer
 cheer
 
@@ -37,5 +37,9 @@ cheer
 
 配置文件里有加载的代码～
 
+### 一些惊险的事
 
+> 我想着用命令改变命令行字体来着，
+于是试了句（当然是热心网友提供的）
+`gsettings set org.gnome.desktop.`
 
