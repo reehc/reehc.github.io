@@ -15,6 +15,6 @@ cheer
 
 ## 还是搞成文件上传吧。
 
-[**Terminal** by Cheer](#)
+[**Terminal** by Cheer](https://github.com/reehc/Then/blob/master/cheer's%20taste/terminalrc)
 
 
