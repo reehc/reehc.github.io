@@ -1,4 +1,4 @@
-underconstruction.
+```underconstruction.```
 
 > This is an article which reflects wonders and sorrows I've experienced, and in which I'll illustrate a possible method for me to live in the rest of my life. 
 
@@ -16,7 +16,9 @@ The second is an icy family. I do feel sad about this, but just only sad.
 
 The third is unreasonable state. This can really kill me, I can't breathe every time I think of it.
 
+## Meaning
 
+I'd like to create music.
 
 
 
