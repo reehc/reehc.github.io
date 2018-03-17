@@ -17,3 +17,6 @@
   - [15-441 Computer Networks](https://www.cs.cmu.edu/~prs/15-441-F17/)
   - [15-441 Helpful Materials](https://www.cs.cmu.edu/~prs/15-441-F16/lectures/)
 
+  - [如何拯救我自己](rescue.md)
+
+
