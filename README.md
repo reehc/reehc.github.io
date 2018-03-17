@@ -1,4 +1,4 @@
-##### I deleted it all.
+### I deleted it all.
 
 - Computer Graphics
 
@@ -7,7 +7,7 @@
   
 - Computer Languages
 
-  - I don't want to read [The C++ Programming Language](http://www.stroustrup.com/4th.html), Bjarne Stroustrup is so cruel!
+  - I don't want to read [The C++ Programming Language](http://www.stroustrup.com/4th.html)
   - [Awesome Modern C++](http://awesomecpp.com/)
   - [Python & Numpy tutorial from cs231n](https://cs231n.github.io/python-numpy-tutorial/)
   - [Python Summary](http://www.cs.ucc.ie/~hoare/python_summary.pdf)
