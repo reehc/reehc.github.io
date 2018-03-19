@@ -16,9 +16,12 @@ The second is an icy family. I do feel sad about this, but just only sad.
 
 The third is unreasonable state. This can really kill me, I can't breathe every time I think of it.
 
+## Rescue
+
+There is a saying, difficulties in life can be quiet different when you change your view. I don't know if this is a better way of observing life.
+
 ## Meaning
 
-I'd like to create music.
 
 
 
