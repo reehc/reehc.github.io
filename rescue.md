@@ -22,6 +22,8 @@ There is a saying, difficulties in life can be quiet different when you change y
 
 ## Meaning
 
+Life is about learning and creating, or you're just wasting. We sometimes used to waste and cannnot get out, and that time is when we forgot what we really need to do. Do I have to live like this? Yes, I have to. I have to learn and create, or I'm nothing. And for this time, my purposes can be clear. I should concentrate in my major and things I'd like to create. 
 
+My major can be various, but mostly about computer. I can do a lot including vision, intelligence, security, etc. Every area should not be a bad choice. 
 
-
+I'd really like to write songs, though I don't have enough skills now. Another thing is language, which is essetial for my furture life. Oh, philosophy! Wanna A Complete Me.
