@@ -27,3 +27,18 @@ Life is about learning and creating, or you're just wasting. We sometimes used t
 My major can be various, but mostly about computer. I can do a lot including vision, intelligence, security, etc. Every area should not be a bad choice. 
 
 I'd really like to write songs, though I don't have enough skills now. Another thing is language, which is essetial for my furture life. Oh, philosophy! Wanna A Complete Me.
+
+## End
+
+Anyway, I decide to live.
+
+I'm gonna prepare for TOEFL & N1.
+
+I'm gonna learn all beautiful and powerful knowledges.
+
+I'm gonna read, understand, and think about the world.
+
+Be yourself.
+
+
+
