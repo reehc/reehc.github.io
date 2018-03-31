@@ -40,5 +40,3 @@ I'm gonna read, understand, and think about the world.
 
 Be yourself.
 
-
-
