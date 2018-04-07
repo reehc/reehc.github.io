@@ -1,4 +1,6 @@
-TEX=simple
+# (why makefile does not change pwd?)[https://unix.stackexchange.com/questions/150786/why-current-directory-doesnt-change-in-makefile]
+
+TEX=slides
 
 LATEX:
 	@rm -rf build
